@@ -781,6 +781,7 @@ h4 {
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
+    filter: contrast(1);
 }
 
 .btn-atomic-tangerine:hover {
@@ -1039,4 +1040,8 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.contrast{
+    filter: contrast(1);
 }
