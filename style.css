@@ -98,13 +98,13 @@ a:hover {
 .b-parallax {
     background-attachment: fixed;
 }
-
+/*
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(0, 0, 0, 0.7);
 }
-
+*/
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, 0);
 }
 
 .d-bloc .icon-round,
@@ -119,7 +119,7 @@ a:hover {
     border-color: rgba(255, 255, 255, .2);
 }
 
-.d-bloc .a-btn,
+.d-bloc .a-btn,/*after rajouter*/
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
@@ -132,14 +132,14 @@ a:hover {
 .d-bloc h4 a,
 .d-bloc h5 a,
 .d-bloc h6 a,
-.d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+.d-bloc p a, footer li a{
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
+.d-bloc a:hover .icon-sm ,
 .d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
@@ -149,8 +149,8 @@ a:hover {
 .d-bloc h4 a:hover,
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
-.d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+.d-bloc p a:hover, .col-sm-4 ul li a:hover{
+    opacity: 0.6;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -651,7 +651,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
 }
 
 .container {
@@ -701,7 +701,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto auto auto;margin-bottom: 25px;
 }
 
 h2 {
@@ -780,13 +780,13 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
-    filter: contrast(1);
+    color: #000000!important;
+    /*filter: contrast(1);*/
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    /*background: #c27956!important;*/filter: brightness(80%);
+    /*color: #000000!important;*/
 }
 
 .ltc-white {
@@ -796,7 +796,7 @@ h4 {
 .ltc-white:hover {
     color: #cccccc!important;
 }
-
+/*
 .ltc-atomic-tangerine {
     color: #F3976C!important;
 }
@@ -804,7 +804,7 @@ h4 {
 .ltc-atomic-tangerine:hover {
     color: #c27956!important;
 }
-
+*/
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
@@ -823,7 +823,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpeg");
 }
 
 @media (max-width: 1024px) {
@@ -848,19 +848,19 @@ h4 {
         max-width: 100%
     }
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/*
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
-
+*/
 @media (max-width: 991px) {
     .container {
         width: 100%;
@@ -873,10 +873,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    /*.bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -885,8 +885,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /*padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);*/
     }
 }
 
@@ -1040,8 +1040,4 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
-
-.contrast{
-    filter: contrast(1);
 }
